@@ -1,0 +1,106 @@
+*, ::after, ::before {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    display: 50%;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 100%;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 14px;
+}
+
+.icon-card {
+    width: 24px;
+    height: 24px;
+}
+
+.header{
+    background-color: #F1F3FF;
+}
+
+/*.container-fluid { 
+    background-color:#035397;
+    border-color: #035397;
+}*/
+.mobil {
+    background-color: #F1F3FF;
+    ;
+}
+.container {
+    background-color: white;
+}
+
+.col li img {
+    width: 20px;
+    height: 20px;
+}
+
+.col li {
+    list-style: none;
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+
+}
+ 
+.navbar {
+    padding-inline: auto;
+    padding-bottom: auto;
+}
+
+.caption {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.container my-4 {
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+.fluid-container {
+    background-color: blue;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-style: square;
+    padding : 100px;
+}
+
+.container {
+    padding-top: 150px;
+} 
+
+.accordion {
+    padding-bottom: auto;
+}
+
+.footer {
+    padding-top: 100px;
+}
+
+.filter {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}

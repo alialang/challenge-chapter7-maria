@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rent Car binar Jombang</title>
+
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="./property/style/css/bootstrap.css">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="./property/style/css/style.css">
+  <style>
+    .filter {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      overflow-x: hidden;
+      padding-top: 60px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  </style>
+
+</head>
+
+<body>
+   <!-- Logic Rizki utk background color gelap nya -->
+   <div class="filter" id="filter" onclick="inactiveDarkBackground()"></div>
+  
+  <!--Navbar for Header-->
+  <div class="header">
+    <div class="container-fluid">
+      <header class="d-flex justify-content-between">
+        <img class="navbar-brand mx-5" src="./images/logo.png">
+        <ul class="nav nav-pills mx-5">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Our Services</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Why Us</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Testimonial</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+          <li class="nav-item">
+            <button class="btn btn-success btn-lg" type="button"> Register </button>
+          </li>
+        </ul>
+      </header>
+    </div>
+    <!--End Navbar-->
+
+    <!--Jumbroton for Hello Pages-->
+    <div class="p-5 mb-8 rounded-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h2 class="display-5">Sewa & Rental Mobil Terbaik di Kawasan Jakarta</h2>
+            <p class="col-md-8">
+              Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau.
+              Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.
+            </p>
+          </div>
+          <div class="mobil col">
+            <img src="./images/car.png" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Jumbroton for Hello Pages-->
+
+  <!-- Form for car -->
+  <div class="container border bg-light rounded p-5 mt-3 position-relative" style="z-index: 2; border-radius: 8px;">
+    <div class="row gx-3 gy-2 align-items-center" onClick="activeDarkBackground()">
+      <div class="col-sm-3">
+        <p>Tipe Driver</p>
+        <label class="text-white visually-hidden">Tipe Driver</label>
+        <select class="form-select">
+          <option selected>Pilih Tipe Driver</option>
+          <option value="1">Dengan Supir</option>
+          <option value="2">Tanpa Supir (Lepas Kunci)</option>
+        </select>
+      </div>
+      <div class="col-sm-3">
+        <p>Tanggal</p>
+        <label class="visually-hidden">Tanggal</label>
+        <input type="date" class="form-select" id="date">
+      </div>
+      <div class="col-sm-2">
+        <p>Waktu Jemput/Ambil</p>
+        <label class="visually-hidden">Waktu Jemput/Ambil</label>
+        <input type="time" id="hours">
+        <!-- <select class="form-select" id="hours">
+              <option selected>Pilih Waktu</option>
+              <option value="1">
+                <p class="text-start">08:00</p>
+                <p class="text-end">WIB</p>
+              </option>
+              <option value="2">
+                <p class="text-start">09:00</p>
+                <p class="text-end">WIB</p>
+              </option>
+              <option value="3">
+                <p class="text-start">10:00</p>
+                <p class="text-end">WIB</p>
+              </option>
+              <option value="4">
+                <p class="text-start">11:00</p>
+                <p class="text-end">WIB</p>
+              </option>
+              <option value="5">
+                <p class="text-start">12:00</p>
+                <p class="text-end">WIB</p>
+              </option>
+            </select> -->
+      </div>
+      <div class="col-sm-3">
+        <p>Jumlah Penumpang</p>
+        <label class="visually-hidden">Jumlah Penumpang (Optional)</label>
+        <div class="input-group">
+          <input id="passenger" type="text" class="form-control" placeholder="Jumlah Penumpang">
+          <div class="input-group-text">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1">
+        <div>
+          <button class="btn btn-success" onClick="app.init().then(app.run)">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Search Car -->
+  </div>
+
+    <!-- <button id="load-btn">Load</button>
+    <button id="clear-btn">Clear</button> -->
+    <div class="container mt-4">
+    <div id="cars-container" class="row row-cols-lg-3 row-cols-sm-2 row-cols-1 g-3">
+    </div>
+  </div>
+  </main>
+
+  <!--Footer for the last-->
+  <div class="footer">
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="wrapper-col-1">
+              <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+              <p>binarcarrental@gmail.com</p>
+              <p>081-233-334-808</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="wrapper-col-2">
+              <ul>
+                <li>
+                  <h4>Our Services</h4>
+                </li>
+                <li>
+                  <h4>Why Us</h4>
+                </li>
+                <li>
+                  <h4>Testimonial</h4>
+                </li>
+                <li>
+                  <h4>FAQ</h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="wrapper-col-3">
+              <div class="wrapper-icon">
+                <p>Connect with us</p>
+                <a href="#"><img class="icon-card" src="./images/icon_facebook.png"></a>
+                <a href="#"><img class="icon-card" src="./images/icon_instagram.png"></a>
+                <a href="#"><img class="icon-card" src="./images/icon_twitter.png"></a>
+                <a href="#"><img class="icon-card" src="./images/icon_mail.png"></a>
+                <a href="#"><img class="icon-card" src="./images/icon_twitch.png"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="wrapper-col-4">
+              <p>Copyright Binar 2022</p>
+              <img src="./images/logo.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!--Example Javascript-->
+  <script type="text/javascript" src="./property/scripts/binar.js"></script>
+  <script type="text/javascript" src="./property/scripts/app.example.js"></script>
+  <script type="text/javascript" src="./property/scripts/car.example.js"></script>
+  <script type="text/javascript" src="./property/scripts/main.example.js"></script>
+
+  <script>
+    function activeDarkBackground() {
+      document.getElementById("filter").style.width = "100%";
+    }
+  
+    function inactiveDarkBackground() {
+      document.getElementById("filter").style.width = "0";
+    }
+  </script>
+</body>
+
+</html>
