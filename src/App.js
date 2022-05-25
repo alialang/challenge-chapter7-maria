@@ -5,7 +5,7 @@ import { Routes } from 'react-router-dom';
 function App() {
   return (
     <Routes>
-      <Route path='/' element={ } />
+      <Route path='/' element={'./index.js'} />
     </Routes>
   );
 }
