@@ -1,18 +1,18 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
-import Main from './Components/Main/Main';
+import CarCard from './Components/CarCard';
 import Footer from '../../components/Footer/Footer';
 
-class AppLanding extends React.Component {
+class AppCard extends React.Component {
     render() {
         return (
             <div>
                 <Header />
-                <Main />
+                <CarCard />
                 <Footer />
             </div>
         );
     }
 }
 
-export default AppLanding;
+export default AppCard;
