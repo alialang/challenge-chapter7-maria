@@ -28,10 +28,6 @@ p {
     background-color: #F1F3FF;
 }
 
-/*.container-fluid { 
-    background-color:#035397;
-    border-color: #035397;
-}*/
 .mobil {
     background-color: #F1F3FF;
     ;
@@ -86,10 +82,6 @@ ul li {
 
 .accordion {
     padding-bottom: auto;
-}
-
-.footer {
-    padding-top: 100px;
 }
 
 .filter {

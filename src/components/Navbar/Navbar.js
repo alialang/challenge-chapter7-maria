@@ -13,9 +13,9 @@ class Navbar extends Component {
                             <li className='nav-item'>
                                 <a href="#" className='nav-link'>Our Services</a>
                             </li>
-                            <li className='nav-item'><a href="#" className='nav-link'>Why Us</a></li>
-                            <li className='nav-item'><a href="#" className='nav-link'>Testimonial</a></li>
-                            <li className='nav-item'><a href="#" className='nav-link'>FAQ</a></li>
+                            <li className='nav-item'><a href='#' className='nav-link'>Why Us</a></li>
+                            <li className='nav-item'><a href='#' className='nav-link'>Testimonial</a></li>
+                            <li className='nav-item'><a href='#' className='nav-link'>FAQ</a></li>
                             <li className='nav-item'>
                                 <button className='btn btn-success btn-lg' type='button'> Register </button>
                             </li>
