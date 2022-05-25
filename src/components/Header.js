@@ -22,6 +22,7 @@ const Navbar = () => {
                     </header>
                 </div>
             </div>
+
         </header>
     );
 }
