@@ -1,0 +1,25 @@
+import React from 'react';
+import Navbar from '../../components/Navbar';
+import Heading from '../../components/Header';
+import Main from './Components/Main';
+import Carousel from '../../Components/OwlCarousel/OwlCarousel';
+import Banner from './Components/Banner';
+import Accordion from './Components/Accordion';
+import Footer from '../../components/Footer';
+import '../style.css';
+
+function Landing() {
+    return (
+        <div>
+            <Navbar />
+            <Heading />
+            <Main />
+            <Carousel />
+            <Banner />
+            <Accordion />
+            <Footer />
+        </div>
+    )
+}
+
+export default Landing;

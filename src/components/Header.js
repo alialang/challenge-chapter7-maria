@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import bootstrap from 'bootstrap';
-import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 class Heading extends Component {
     render() {
@@ -11,13 +10,14 @@ class Heading extends Component {
                     <div className='container-fluid'>
                         <div className='row'>
                             <div className='col'>
-                                <h2 className='display-5'>Sewa & Rental Mobil Terbaik di Kawasan Jakarta</h2>
+                                <h2 className='display-5'>Sewa & Rental Mobil Terbaik di Kawasan Jombang</h2>
                                 <p className='col-md-8'>
                                     Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau.
                                     Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.
                                 </p>
+                                <button className='btn btn-success btn-lg' type='button'> Mulai Sewa Mobil </button>
                             </div>
-                            <div className='mobil col'>
+                            <div className='col-lg-6'>
                                 <img src={process.env.PUBLIC_URL + './images/car.png'} className='img-fluid' />
                             </div>
                         </div>
