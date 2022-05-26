@@ -20,7 +20,7 @@ const photoStyle = {
     marginTop: "50px",
 }
 
-class CarouselItem extends Component {
+class TestiCard extends Component {
     render() {
         return (
             <div className="card blue-1 mb-3" style={cardStyle}>
@@ -43,4 +43,4 @@ class CarouselItem extends Component {
     }
 }
 
-export default CarouselItem;
+export default TestiCard;

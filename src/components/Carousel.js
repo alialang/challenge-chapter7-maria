@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import CarouselItem from './OwlCarousel/Carousel';
-import '../../pages/style.css'
+// import '../../pages/style.css'
 
 class Carousel extends Component {
     render() {
@@ -10,7 +10,6 @@ class Carousel extends Component {
                 <p className="text-center my-3">
                     Berbagai review positif dari para pelanggan kami
                 </p>
-
             </div >
         )
     }

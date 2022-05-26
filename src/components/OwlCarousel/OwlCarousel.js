@@ -1,6 +1,6 @@
 import React from 'react';
 import DataTesti from '../../data/carousel.json';
-import CarouselItem from './Carousel';
+import TestiCard from './Carousel';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.min.css';
 import 'owl.carousel/dist/assets/owl.theme.default.min.css';
@@ -35,7 +35,7 @@ function Owl() {
 
         {DataTesti.map((item) => {
             return (
-                <CarouselItem
+                <TestiCard
                     profil={item.profil}
                     rate={item.rate}
                     comment={item.comment}
