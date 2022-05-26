@@ -36,9 +36,11 @@ p {
     background-color: #F1F3FF;
     ;
 }
+
 button{
     border-radius: 8px;
 }
+
 .container {
     background-color: white;
 }
@@ -87,6 +89,30 @@ ul li {
     padding-top: 150px;
 } 
 
+.whyus {
+    margin-top: 100px;
+  }
+  
+  .whyus-text>h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .whyus .card {
+    padding: 10px;
+    background-color: #f1f3ff;
+  }
+  
+  .card-img-top {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .card-title-text {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
 .accordion {
     padding-bottom: auto;
 }

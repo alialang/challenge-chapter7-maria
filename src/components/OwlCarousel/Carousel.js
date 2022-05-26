@@ -1,17 +1,46 @@
-import { Carousel } from "bootstrap";
 import React, { Component } from "react";
+// import Owl from "./OwlCarousel";
+import "../../pages/style.css";
 
-class Corousel extends Component {
+const rateStyle = {
+    width: "100px",
+}
+
+const cardStyle = {
+    backgroundColor: "#F1F3FF",
+    borderRadius: "10px",
+    width: "650px",
+    height: "230px",
+    margin: "auto",
+}
+
+const photoStyle = {
+    width: "70px",
+    margin: "auto",
+    marginTop: "50px",
+}
+
+class CarouselItem extends Component {
     render() {
         return (
-            <div className="testimonial pt-5" id="For-Testimonial">
-                <h2 className="text-center my-2">Testimonial</h2>
-                <p className="text-center my-3">
-                    Berbagai review positif dari para pelanggan kami
-                </p>
+            <div className="card blue-1 mb-3" style={cardStyle}>
+                <div className="row g-0">
+                    <div className="col-md-3">
+                        <img src={this.props.profil} className="img-fluid rounded-start" style={photoStyle} alt="..." />
+                    </div>
+                    <div className="col-md-9">
+                        <div className="card-body">
+                            <img src={this.props.rate} className="rate my-3" style={rateStyle} alt="" />
+                            <p>
+                                {this.props.comment}
+                            </p>
+                            <p className="bold-text">{this.props.name}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
 }
 
-export default Carousel;
+export default CarouselItem;

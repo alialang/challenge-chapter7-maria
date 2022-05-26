@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../../components/Navbar';
 import Heading from '../../components/Header';
 import Main from './Components/Main';
-// import Carousel from '../../Components/OwlCarousel/OwlCarousel';
+import Carousel from '../../components/Carousel';
 import Banner from './Components/Banner';
 import Accordion from './Components/Accordion';
 import Footer from '../../components/Footer';
@@ -14,7 +14,7 @@ function Landing() {
             <Navbar />
             <Heading />
             <Main />
-            {/* <Carousel /> */}
+            <Carousel />
             <Banner />
             <Accordion />
             <Footer />
