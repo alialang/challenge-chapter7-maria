@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from '../../components/Header/Header';
+import Header from '../../components/Header';
 import CarCard from './Components/CarCard';
-import Footer from '../../components/Footer/Footer';
+import Footer from '../../components/Footer';
 
-class AppCard extends React.Component {
+class Cars extends React.Component {
     render() {
         return (
             <div>
@@ -15,4 +15,4 @@ class AppCard extends React.Component {
     }
 }
 
-export default AppCard;
+export default Cars;
