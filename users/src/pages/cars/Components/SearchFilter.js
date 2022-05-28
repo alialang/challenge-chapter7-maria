@@ -77,7 +77,7 @@ const Filter = () => {
                         </div>
                         <div className="col-lg-2 my-1 d-flex flex-column justify-content-center">
                             <p></p>
-                            <button className="btn btn-regis submit">Cari Mobil</button>
+                            <button className="btn btn-success submit">Cari Mobil</button>
                         </div>
                     </div>
                 </form>

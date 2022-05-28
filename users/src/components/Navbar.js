@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import bootstrap from 'bootstrap';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../pages/style.css'
 
 class Navbar extends Component {
     render() {
@@ -8,9 +9,9 @@ class Navbar extends Component {
             <div className='header'>
                 <div className='container-fluid'>
                     <header className='d-flex justify-content-between'>
-                        <div className="navbar-brand logo text-white text-center">
+                        <button className='home-logo'>
                             Maria
-                        </div>
+                        </button>
                         <ul className='nav nav-pills mx-5'>
                             <li className='nav-item'>
                                 <a href='' className='nav-link'>Our Services</a>

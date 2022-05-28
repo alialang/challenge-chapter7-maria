@@ -41,6 +41,19 @@ button{
     border-radius: 8px;
 }
 
+.home-logo {
+  background-color: #0d28a6;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 0px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  border: 1px solid #0d28a6;
+  transition: 0.3s ease-in-out;
+}
+
 .container {
     background-color: white;
 }
