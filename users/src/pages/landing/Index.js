@@ -12,7 +12,7 @@ function Landing() {
     return (
         <>
             <Navbar />
-            <Heading />
+            <Heading showbtn={true} />
             <Main />
             <Carousel />
             <Banner />

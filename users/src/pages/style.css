@@ -88,15 +88,6 @@ ul li {
     padding-bottom: auto;
 }
 
-.fluid-container {
-    background-color: blue;
-    text-align: center;
-    color: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border-style: square;
-    padding : 100px;
-}
 
 .container {
     padding-top: 150px;

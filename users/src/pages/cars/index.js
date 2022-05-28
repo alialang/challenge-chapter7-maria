@@ -9,7 +9,7 @@ function Cars() {
     return (
         <div>
             <Navbar />
-            <Header />
+            <Header showbtn={false} />
             <Filter />
             <Footer />
         </div>

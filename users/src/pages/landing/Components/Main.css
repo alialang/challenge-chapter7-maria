@@ -1,3 +1,9 @@
 .card pt-3 {
     width: 18rem,
 }
+
+.ceklis {
+    height: 20px;
+    width: 20px;
+    word-spacing: 13px;
+}
