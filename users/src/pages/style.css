@@ -133,3 +133,66 @@ ul li {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.6);
 }
+
+/* -----Owl Carousels----- */
+.item {
+    background: #f1f3ff;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    border: 0 10px;
+    padding-top: 60px;
+  }
+  
+  .user {
+    font-weight: 700;
+  }
+  
+  /* Responsive for owl carousel */
+  @media (max-width: 992px) {
+    .owl-theme {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .rating div {
+      justify-content: center;
+    }
+    .user {
+      text-align: center;
+    }
+    .avatar {
+      margin-bottom: 16px;
+    }
+    .rating .star {
+      margin-bottom: 16px;
+    }
+  }
+  
+/* ------------------------------------------- BANNER ------------------------------------------- */
+#banner {
+    background: #0d28a6;
+    border-radius: 0px;
+  }
+  
+  #banner p {
+    max-width: 468px;
+    font-size: 14px;
+  }
+
+.filter {
+  top: -4rem;
+  width: 75%;
+  margin: auto;
+  /* margin: 0 1rem 0 1rem; */
+  padding: 2rem 1rem 2rem 1rem;
+  position: relative;
+  background-color: white;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.cars-container img {
+  height: 30vw;
+  object-fit: cover;
+}
+  
+  

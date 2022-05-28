@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import bootstrap from 'bootstrap';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
@@ -15,7 +16,9 @@ class Heading extends Component {
                                     Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau.
                                     Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.
                                 </p>
-                                <button className='btn btn-success btn-lg' type='button'> Mulai Sewa Mobil </button>
+                                <Link to='/cars'>
+                                    <button className='btn btn-success btn-lg' type='button'> Mulai Sewa Mobil </button>
+                                </Link>
                             </div>
                             <div className='col-lg-6'>
                                 <img src={process.env.PUBLIC_URL + './images/car.png'} className='img-fluid' />

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Card from "./CarCard";
+import FilterCar from "./CarCard";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchUsers } from "../redux";
+import { fetchUsers } from "../../../redux";
 
 const Filter = () => {
     const [type, setType] = useState("Pilih Tipe Driver");

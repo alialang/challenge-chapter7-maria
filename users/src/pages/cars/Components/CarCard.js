@@ -1,10 +1,9 @@
-import React from "react";
-
-const Card = ({ cars }) => {
+const FilterCar = (props) => {
+    console.log(props.cars)
     return (
         <div className="container">
             <div className="cars-container row">
-                {cars.map((car) => (
+                {props.cars && props.cars.map((car) => (
                     <div className="col-md-4 my-2" key={car.id}>
                         <div className="card h-100">
                             <div className="card-body">
@@ -38,4 +37,4 @@ const Card = ({ cars }) => {
     );
 };
 
-export default Card;
+export default FilterCar;
