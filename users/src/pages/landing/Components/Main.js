@@ -16,8 +16,8 @@ class Main extends Component {
                             <h2>Best Car Rental for any kind of trip in Jombang</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum doloribus eligendi numquam nulla nostrum placeat quae consectetur dolorem eius tempora neque adipisci distinctio a aliquid quisquam, repellat, accusantium quo optio.</p>
                             <ul>
-                                <li><img src='images/ceklis.png' className='ceklis' />&ensp;Sewa Mobil Dengan Supir di Bali 12 Jam</li>
-                                <li><img src='images/ceklis.png' className='ceklis' />&ensp;Sewa Mobil Lepas Kunci di Bali 24 Jam</li>
+                                <li><img src='images/ceklis.png' className='ceklis' />&ensp;Sewa Mobil Dengan Supir di Jombang 12 Jam</li>
+                                <li><img src='images/ceklis.png' className='ceklis' />&ensp;Sewa Mobil Lepas Kunci di Jombang 24 Jam</li>
                                 <li><img src='images/ceklis.png' className='ceklis' />&ensp;Sewa Mobil Jangka Panjang Bulanan</li>
                                 <li><img src='images/ceklis.png' className='ceklis' />&ensp;Gratis Antar - Jemput Mobil di Bandara</li>
                                 <li><img src='images/ceklis.png' className='ceklis' />&ensp;Layanan Airport Transfer / Drop In Out</li>

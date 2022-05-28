@@ -4,12 +4,17 @@ const clientId = '170306968804-vlbbus2ab75d5avjpen6a736t3tonuku.apps.googleuserc
 
 function Login() {
 
-    const onSuccess = (res) => {
-        console.log('Login Success! Current User: ', res.profileObj);
+    const onSuccess = (response) => {
+        localStorage.setItem("email", response.profileObj.email);
+        localStorage.setItem("name", response.profileObj.name);
+        localStorage.setItem("googleId", response.profileObj.googleId);
+
+        console.log('Login Success! Current User: ', response.profileObj);
+        window.location.reload(false);
     }
 
-    const onFailure = (res) => {
-        console.log('LOGIN FAILED! Please submit again res: ', res);
+    const onFailure = (response) => {
+        console.log('LOGIN FAILED! Please submit again res: ', Response);
     }
 
     return (

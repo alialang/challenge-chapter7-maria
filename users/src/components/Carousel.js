@@ -26,8 +26,8 @@ class Carousel extends React.Component {
                     center={true}
                     dots={false}
                     navText={[
-                        "<img src='images/left-button.png' alt='kanan' className='ceklis'>",
-                        "<img src='images/right-button.png' alt='kanan' className='ceklis'>",
+                        "<img src='images/left-button.png' alt='kanan' style='width: 32px; margin-right: 10px;'>",
+                        "<img src='images/right-button.png' alt='kanan' style='width: 32px; margin-right: 10px;'>",
                     ]}
                     responsive={{
                         0: {

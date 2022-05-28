@@ -7,6 +7,7 @@ import Login from './Login'
 import Logout from './Logout'
 
 const clientId = '170306968804-vlbbus2ab75d5avjpen6a736t3tonuku.apps.googleusercontent.com';
+
 function Main() {
 
     const cardStyle = {
@@ -14,10 +15,12 @@ function Main() {
         margin: 'auto',
         padding: '10px',
     }
+
     const container = {
         padding: '50px',
         marginTop: '70px',
     }
+
     const textStyle = {
         textAlign: 'center',
     }

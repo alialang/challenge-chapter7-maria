@@ -4,8 +4,12 @@ const clientId = '170306968804-vlbbus2ab75d5avjpen6a736t3tonuku.apps.googleuserc
 
 function Logout() {
 
-    const onSuccess = () => {
+    const onSuccess = (response) => {
         console.log('Logout Success! Bye..');
+        localStorage.setItem("email", response.profileObj.email);
+        localStorage.setItem("name", response.profileObj.name);
+        localStorage.setItem("googleId", response.profileObj.googleId);
+        window.location.reload(false);
     }
 
     return (
