@@ -6,7 +6,7 @@ import { gapi } from "gapi-script";
 import Login from './Login'
 import Logout from './Logout'
 
-const clientId = '170306968804-vlbbus2ab75d5avjpen6a736t3tonuku.apps.googleusercontent.com';
+const clientId = '273331216648-06e5r0h35r015h3dvg2rqs68oqgevb16.apps.googleusercontent.com';
 
 function Main() {
 
